@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ImageListItem } from '../models/image-list-item';
 
 @Component({
   selector: 'app-gallery',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class GalleryComponent {
 
+  @Input()
+  images: ImageListItem[] = [];
 }

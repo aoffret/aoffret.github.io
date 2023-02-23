@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ProjectComponent } from './project/project.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ImageListItemComponent } from './image-list-item/image-list-item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     PresentationComponent,
     ProjectComponent,
     GalleryComponent,
+    ImageListItemComponent,
     
   ],
   imports: [

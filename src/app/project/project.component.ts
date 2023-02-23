@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageListItem } from '../models/image-list-item';
 
 @Component({
   selector: 'app-project',
@@ -7,12 +8,14 @@ import { Component } from '@angular/core';
 })
 export class ProjectComponent {
 
-  gallery!: string[];
+  images!: ImageListItem[];
 
   ngOnInit() {
-    this.gallery = [
-      "/assets/Moi.png",
-      "/assets/Moi.png"
+    this.images = [
+      {
+        src: 'https://picsum.photos/200',
+        caption: 'BOUH!',
+      },
     ];
   }
 }
