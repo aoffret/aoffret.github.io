@@ -39,5 +39,14 @@ html, body {
     padding: 0%;
     background-color: #191919;
 }
-html, body { height: 100%; color: #f2f2f2;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #f2f2f2;}
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  color: #f2f2f2;}
+
+.container {
+  background-color: #191919;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 20px;
+}

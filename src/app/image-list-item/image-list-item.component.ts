@@ -1,13 +1,16 @@
-import { Component, Input } from '@angular/core';
-import { ImageListItem } from '../models/image-list-item';
+import { Component, Input, OnInit } from '@angular/core';
+import { imageListItem } from '../models/image-list-item';
 
 @Component({
   selector: 'app-image-list-item',
   templateUrl: './image-list-item.component.html',
   styleUrls: ['./image-list-item.component.scss']
 })
-export class ImageListItemComponent {
+export class ImageListItemComponent implements OnInit{
 
   @Input()
-  image?: ImageListItem;
+  image!: imageListItem;
+
+  ngOnInit() {
+  }
 }

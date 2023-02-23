@@ -1,20 +1,130 @@
-import { Component } from '@angular/core';
-import { ImageListItem } from '../models/image-list-item';
+import { Component, OnInit } from '@angular/core';
+import { imageListItem } from '../models/image-list-item';
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
 
-  images!: ImageListItem[];
+  game!: imageListItem[];
+  personnal!: imageListItem[];
+  graphic!: imageListItem[];
 
   ngOnInit() {
-    this.images = [
+    this.game = [
       {
-        src: 'https://picsum.photos/200',
+        src: "assets/game/City.png",
         caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/game/M2.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/game/HappyFace.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/game/M1.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },{
+        src: "assets/game/Face.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/game/M3.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },{
+        src: "assets/game/Pixel.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+    ];
+
+    this.personnal = [
+      {
+        src: "assets/personnal/Guy.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/personnal/Me.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/personnal/Dog.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/personnal/CardBoard.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/personnal/Car.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/personnal/Dino.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/personnal/Skull.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+    ];
+
+    this.graphic = [
+      {
+        src: "assets/graphic/Snape.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/graphic/GM.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/graphic/Mateo.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
+      },
+      {
+        src: "assets/graphic/Book.png",
+        caption: 'BOUH!',
+        model: '/asset/model',
+        title: 'caca'
       },
     ];
   }

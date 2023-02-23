@@ -12,8 +12,9 @@ import {MatToolbarModule} from '@angular/material/toolbar'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ProjectComponent } from './project/project.component';
-import { GalleryComponent } from './gallery/gallery.component';
 import { ImageListItemComponent } from './image-list-item/image-list-item.component';
+import { ContactComponent } from './contact/contact.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,9 @@ import { ImageListItemComponent } from './image-list-item/image-list-item.compon
     HeaderComponent,
     PresentationComponent,
     ProjectComponent,
-    GalleryComponent,
     ImageListItemComponent,
+    ContactComponent,
+    LinksComponent,
     
   ],
   imports: [

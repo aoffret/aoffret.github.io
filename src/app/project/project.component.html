@@ -1,5 +1,15 @@
 <div class="container">
     <h1>Projects</h1>
     <h2>Game assets</h2>
-    <app-gallery [images]="images"></app-gallery>
+    <div class="table">
+        <app-image-list-item *ngFor="let imageListItem of game" [image]="imageListItem"></app-image-list-item>
+    </div>
+    <h2>Personnal</h2>
+    <div class="table">
+        <app-image-list-item *ngFor="let imageListItem of personnal" [image]="imageListItem"></app-image-list-item>
+    </div>
+    <h2>Graphic Design</h2>
+    <div class="table">
+        <app-image-list-item *ngFor="let imageListItem of graphic" [image]="imageListItem"></app-image-list-item>
+    </div>
 </div>

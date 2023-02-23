@@ -1,4 +1,6 @@
-export interface ImageListItem {
-    src: string;
-    caption: string;
+export class imageListItem {
+    src!: string;
+    caption!: string;
+    model!: string;
+    title!: string;
   }
