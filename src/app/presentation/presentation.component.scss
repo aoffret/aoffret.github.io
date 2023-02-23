@@ -1,0 +1,27 @@
+.container {
+    margin: 0px;
+    background-color: #191919;
+    text-align: center;
+    color: #f2f2f2;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+.avatar {
+    height: 450px;
+}
+
+.parcours {
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.blabla {
+    padding: 20px;
+}
