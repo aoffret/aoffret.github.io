@@ -41,8 +41,10 @@ html, body {
 }
 body { 
   margin: 0; 
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
-  color: #f2f2f2;}
+  font-family: Poppins, Roboto, "Helvetica Neue", sans-serif; 
+  color: #f2f2f2;
+  font-size: 20px;
+}
 
 .container {
   background-color: #191919;
@@ -54,4 +56,13 @@ body {
 a {
   text-decoration: none;
   color: #f2f2f2;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0%;
+}
+
+h2 {
+  font-size: 50px;
 }

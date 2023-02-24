@@ -1,3 +1,6 @@
 <div (click)="openDialog()" class="model-card">
-    <img src= "{{ image.src }}"  class="model-card-img" alt="...">
+    <img src= "{{ image.src }}"  class="model-card-img" alt="{{image.title}}" title="{{image.title}}">
+    <div class="caption">
+		{{ image.title }}
+	</div>
 </div>
