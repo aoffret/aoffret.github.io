@@ -1,11 +1,11 @@
 .table {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 60%;
 }
 
 app-image-list-item {
     width: 30%;
+    margin: 5px;
 }

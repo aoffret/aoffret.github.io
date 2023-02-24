@@ -15,6 +15,10 @@ import { ProjectComponent } from './project/project.component';
 import { ImageListItemComponent } from './image-list-item/image-list-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { LinksComponent } from './links/links.component';
+import { FooterComponent } from './footer/footer.component';
+import { PopUpComponent } from './pop-up/pop-up.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CanvaComponent } from './canva/canva.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,9 @@ import { LinksComponent } from './links/links.component';
     ImageListItemComponent,
     ContactComponent,
     LinksComponent,
+    FooterComponent,
+    PopUpComponent,
+    CanvaComponent,
     
   ],
   imports: [
@@ -36,7 +43,8 @@ import { LinksComponent } from './links/links.component';
     BrowserModule,
     HttpClientModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
