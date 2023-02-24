@@ -1,3 +1,23 @@
+.header {
+    background-color: #363636 ;
+    height: 30px;
+    text-align: right;
+    font-size: x-large;
+    font-weight: bold;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.croix {
+    cursor: pointer;
+    width: 15px;
+}
+
+.croix:active {
+    color: #363636;
+}
+
 .popUp {
     background-color: #242424;
     text-align: center;
@@ -5,8 +25,4 @@
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.canva {
-    background-color: red;
 }

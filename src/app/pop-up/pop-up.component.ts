@@ -8,8 +8,13 @@ import { imageListItem } from '../models/image-list-item';
   styleUrls: ['./pop-up.component.scss']
 })
 export class PopUpComponent {
+  
   constructor(
     public dialogRef: MatDialogRef<PopUpComponent>,
     @Inject(MAT_DIALOG_DATA) public data: imageListItem,
   ) {}
+
+  onClick(): void {
+    this.dialogRef.close();
+  }
 }
