@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LinksComponent {
 
+  open(src:string) {
+    window.open(src, '_blank');
+  }
 }
