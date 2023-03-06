@@ -120,7 +120,7 @@ export class ProjectComponent implements OnInit {
         src: "assets/graphic/Snape.png",
         caption: 'BOUH!',
         model: '/assets/graphic/Snape.png',
-        title: 'caca',
+        title: 'Logo Snape burger',
         logo: true
       },
       {
@@ -134,14 +134,14 @@ export class ProjectComponent implements OnInit {
         src: "assets/graphic/Mateo.png",
         caption: 'BOUH!',
         model: 'assets/graphic/Mateo.png',
-        title: 'caca',
+        title: 'Logo MATEO',
         logo: true
       },
       {
         src: "assets/graphic/Book.png",
         caption: 'BOUH!',
         model: "assets/graphic/Book.png",
-        title: 'caca',
+        title: 'Logo Book',
         logo: true
       },
     ];
