@@ -17,7 +17,7 @@ export class ImageListItemComponent {
 
   openDialog() {
     const dialogRef = this.dialog.open(PopUpComponent, {
-      data: {caption: this.image.caption, model: this.image.model, title: this.image.title},
+      data: {caption: this.image.caption, model: this.image.model, title: this.image.title, logo: this.image.logo},
     });
   }
 }

@@ -3,4 +3,5 @@ export class imageListItem {
     caption!: string;
     model!: string;
     title!: string;
+    logo!: boolean;
   }
