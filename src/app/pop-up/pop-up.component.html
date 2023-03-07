@@ -4,8 +4,12 @@
     <img *ngIf="data.logo" src="{{ data.model }}">
     <div class="caption">
         <h1>{{data.title}}</h1>
-        <mat-dialog-content class="caption">
-            <p> {{data.caption}}</p>
+        <mat-dialog-content >
+            <p>{{data.caption}}</p>
+            <p>{{data.caption}}</p>
         </mat-dialog-content> 
     </div>
 </div>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
