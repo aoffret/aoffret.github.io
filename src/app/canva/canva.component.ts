@@ -12,7 +12,8 @@ export class CanvaComponent implements OnInit, AfterViewInit {
   @Input()
   model!: string;
 
-  @ViewChild('canvas') private canvasRef!: ElementRef;
+  @ViewChild('canvas') 
+  private canvasRef!: ElementRef;
 
   private get canvas(): HTMLCanvasElement {
     return this.canvasRef.nativeElement;

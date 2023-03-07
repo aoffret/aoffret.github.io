@@ -110,8 +110,9 @@ export class CanvasDisplayService {
     //* Renderer
     // Use canvas element in template
     this.renderer = new THREE.WebGLRenderer({ canvas: canva, antialias: true });
-    this.renderer.setPixelRatio(devicePixelRatio);
+    //this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(canva.clientWidth, canva.clientHeight);
+    this.renderer.render(this.scene, this.camera)
     let component: CanvasDisplayService = this;
     (function render() {
       component.renderer.render(component.scene, component.camera);

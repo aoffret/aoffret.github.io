@@ -16,49 +16,51 @@ export class ProjectComponent implements OnInit {
     this.game = [
       {
         src: "assets/game/City.png",
-        caption: 'BOUH!',
+        caption: "For one of the games, I had to create assets for an entire city. The building where made using box modelling, flat texturing and one common material. Every other building is a variation of the previous one. For the citizen, I modified assets already owned by the company to make them fit the context and needs of the game. The game needed animation so I had to mix and modified already existing animation or create new one to fit our purpose.",
         model: '/asset/model',
-        title: 'caca',
+        title: 'City assets',
         logo: false
       },
       {
         src: "assets/game/M2.png",
-        caption: 'BOUH!',
+        caption: "I created 3D assets to fit a medieval hyper-casual mobile game. The assets needed to be in 3 different time periods. The chosen time periods were Pre-historical, Romain and Middle ages. Each period had to have 7 types of building(Farm, Archer tower, Stable, House, Mage tower, Harbor and Catapult site), 2 types of vehicle( Catapult and Boats), and 4 types of unit (Farmer, Soldier, Archer and Mage). There were also 3 units and buildings that were in-temporal. The unit character was created and then fitted with a proper rig, and then all the weapons, clothes, and equipment were added to the rig. All the animations were compiled on the same model to reduce the weight of the file and simplify the work on the programming side.",
         model: '/asset/model',
-        title: 'caca',
+        title: 'Medieval asset',
         logo: false
       },
       {
         src: "assets/game/HappyFace.png",
-        caption: 'BOUH!',
+        caption: "This asset was made for a mobile game. I wanted the model to be in a 'Disney' style. After gathering references and drawing the face I used 3D sculpting techniques to create the desired face and look. Because of the limitation of smartphones, the polycount had to be brought down. During this step, I made sure to follow the proper topology to ensure the proper behaviours of the model in the animation step. The model was then fitted with a rig and animated using multiple techniques.",
         model: '/asset/model',
-        title: 'caca',
+        title: 'Face model',
         logo: false
       },
       {
         src: "assets/game/M1.png",
-        caption: 'BOUH!',
+        caption: "I created 3D assets to fit a medieval hyper-casual mobile game. The assets needed to be in 3 different time periods. The chosen time periods were Pre-historical, Romain and Middle ages. Each period had to have 7 types of building(Farm, Archer tower, Stable, House, Mage tower, Harbor and Catapult site), 2 types of vehicle( Catapult and Boats), and 4 types of unit (Farmer, Soldier, Archer and Mage). There were also 3 units and buildings that were in-temporal. The unit character was created and then fitted with a proper rig, and then all the weapons, clothes, and equipment were added to the rig. All the animations were compiled on the same model to reduce the weight of the file and simplify the work on the programming side.",
         model: '/asset/model',
-        title: 'caca',
+        title: 'Medieval asset',
         logo: false
-      },{
+      },
+      {
         src: "assets/game/Face.png",
-        caption: 'BOUH!',
+        caption: "This model was inspired by 'One-Armed Monstrosity' from Gravity Falls. The specificity of the model is that there is only a head and a hand. This was challenging in the modelling stage but predominantly in the rigging and animation steps. Because the only features of the model are his face and his hand, greater care was put into the facial animation to convey all the feedback necessary.",
         model: '/asset/model',
-        title: 'caca',
+        title: 'Cartoon head',
         logo: false
       },
       {
         src: "assets/game/M3.png",
-        caption: 'BOUH!',
+        caption: "I created 3D assets to fit a medieval hyper-casual mobile game. The assets needed to be in 3 different time periods. The chosen time periods were Pre-historical, Romain and Middle ages. Each period had to have 7 types of building(Farm, Archer tower, Stable, House, Mage tower, Harbor and Catapult site), 2 types of vehicle( Catapult and Boats), and 4 types of unit (Farmer, Soldier, Archer and Mage). There were also 3 units and buildings that were in-temporal. The unit character was created and then fitted with a proper rig, and then all the weapons, clothes, and equipment were added to the rig. All the animations were compiled on the same model to reduce the weight of the file and simplify the work on the programming side.",
         model: '/asset/model',
-        title: 'caca',
+        title: 'Medieval asset',
         logo: false
-      },{
+      },
+      {
         src: "assets/game/Pixel.png",
-        caption: 'BOUH!',
+        caption: "During my last year of University, I made an FPS 3D Rogue in space with a procedurally generated spaceship. Each room was modelled and textured with 3ds Max and Photoshop. They were then implemented in Unity to make the room generation system. I then modelled, textured and animated the enemy and weapon. The chosen aesthetic was pixel art for the texturing. This aesthetic allowed me a quick texturing and gave me a good introduction to texturing and UVs",
         model: '/asset/model',
-        title: 'caca',
+        title: 'Pixel Game',
         logo: false
       },
     ];

@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CanvaComponent } from './canva/canva.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CanvaComponent } from './canva/canva.component';
     HttpClientModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatDialogModule
+    MatDialogModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
