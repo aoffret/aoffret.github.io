@@ -1,15 +1,12 @@
 <div class="header"><div class="croix" (click)="onClick()">X</div></div>
 <div class="popUp">
-    <app-canva *ngIf="!data.logo" [model]="data.model"></app-canva>
+    <!-- <app-canva *ngIf="!data.logo" [model]="data.model"></app-canva> -->
+    <div style="height: 80vh; width:40vw; background-color: black;"></div>
     <img *ngIf="data.logo" src="{{ data.model }}">
-    <div class="caption">
+    <div>
         <h1>{{data.title}}</h1>
-        <mat-dialog-content >
-            <p>{{data.caption}}</p>
-            <p>{{data.caption}}</p>
+        <mat-dialog-content style="height: 50%;">
+            <p class="caption">{{data.caption}}</p>
         </mat-dialog-content> 
     </div>
 </div>
-<mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-  </mat-dialog-actions>
