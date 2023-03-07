@@ -1,11 +1,10 @@
 <div class="header"><div class="croix" (click)="onClick()">X</div></div>
 <div class="popUp">
-    <!-- <app-canva *ngIf="!data.logo" [model]="data.model"></app-canva> -->
-    <div style="height: 80vh; width:40vw; background-color: black;"></div>
+    <app-canva *ngIf="!data.logo" [model]="data.model"></app-canva>
     <img *ngIf="data.logo" src="{{ data.model }}">
     <div>
         <h1>{{data.title}}</h1>
-        <mat-dialog-content style="height: 50%;">
+        <mat-dialog-content style="height: 50%;" class="mat-typography">
             <p class="caption">{{data.caption}}</p>
         </mat-dialog-content> 
     </div>
