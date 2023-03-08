@@ -18,6 +18,7 @@ import { LinksComponent } from './links/links.component';
 import { FooterComponent } from './footer/footer.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
@@ -44,6 +45,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     MatSidenavModule,
     MatToolbarModule,
     MatDialogModule,
+    MatIconModule,
     ScrollingModule
   ],
   providers: [],

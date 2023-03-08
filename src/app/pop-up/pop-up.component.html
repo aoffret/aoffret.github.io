@@ -1,4 +1,8 @@
-<div class="header"><div class="croix" (click)="onClick()">X</div></div>
+<div class="header">
+    <div class="croix" (click)="onClick()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
+    </div>
+</div>
 <div class="popUp">
     <div id="test" *ngIf="!data.logo">
         <canvas *ngIf="!data.logo" #canvas id="canvas" style="height: 100%; width: 40vw;"></canvas>
