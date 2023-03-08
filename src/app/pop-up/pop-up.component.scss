@@ -28,10 +28,15 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.description {
+    height: 100%;
+    width: 100%;
+}
+
 .caption {
-    font-family: Poppins, Roboto, "Helvetica Neue", sans-serif; 
     color: #f2f2f2;
     font-size: 20px;
+    height: 100%;
 }
 
 img {
