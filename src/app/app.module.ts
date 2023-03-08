@@ -18,7 +18,6 @@ import { LinksComponent } from './links/links.component';
 import { FooterComponent } from './footer/footer.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import {MatDialogModule} from '@angular/material/dialog';
-import { CanvaComponent } from './canva/canva.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
@@ -33,7 +32,6 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     LinksComponent,
     FooterComponent,
     PopUpComponent,
-    CanvaComponent,
     
   ],
   imports: [

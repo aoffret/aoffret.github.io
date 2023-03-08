@@ -1,6 +1,8 @@
 <div class="header"><div class="croix" (click)="onClick()">X</div></div>
 <div class="popUp">
-    <app-canva *ngIf="!data.logo" [model]="data.model"></app-canva>
+    <div id="test">
+    <canvas *ngIf="!data.logo" #canvas id="canvas" style="height: 100%; width: 40vw;"></canvas>
+    </div>
     <img *ngIf="data.logo" src="{{ data.model }}">
     <div>
         <h1>{{data.title}}</h1>

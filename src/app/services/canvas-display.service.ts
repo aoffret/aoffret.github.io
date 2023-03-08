@@ -48,9 +48,9 @@ export class CanvasDisplayService {
     const renderer = new CSS2DRenderer();
     renderer.setSize(canva.clientWidth, canva.clientHeight);
     renderer.domElement.style.position = 'absolute';
-    renderer.domElement.style.top = '105px';
-    renderer.domElement.style.right = '10px';
-    document.body.appendChild(renderer.domElement);
+    renderer.domElement.style.top = '45px';
+    document.getElementById("test")?.appendChild(renderer.domElement);
+    //document.body.appendChild(renderer.domElement);
     this.controls = new OrbitControls(this.camera, renderer.domElement);
     this.controls.enableZoom = true;
     this.controls.enablePan = false;
@@ -110,7 +110,7 @@ export class CanvasDisplayService {
     //* Renderer
     // Use canvas element in template
     this.renderer = new THREE.WebGLRenderer({ canvas: canva, antialias: true });
-    //this.renderer.setPixelRatio(devicePixelRatio);
+    this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(canva.clientWidth, canva.clientHeight);
     this.renderer.render(this.scene, this.camera)
     let component: CanvasDisplayService = this;
