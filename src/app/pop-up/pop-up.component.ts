@@ -29,7 +29,7 @@ export class PopUpComponent {
   ngAfterViewInit() {
     if(!this.data.logo){
       let canva = this.canvasRef.nativeElement
-      this.canvasDisplayService.createScene('assets/models/fan.glb', canva);
+      this.canvasDisplayService.createScene(this.data.model, canva);
       this.canvasDisplayService.startRenderingLoop(canva);
       this.canvasDisplayService.createControls(canva);
     }
