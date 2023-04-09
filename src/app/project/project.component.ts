@@ -17,7 +17,7 @@ export class ProjectComponent implements OnInit {
       {
         src: "assets/game/City.png",
         caption: "For one of the games, I had to create assets for an entire city. The building where made using box modelling, flat texturing and one common material. Every other building is a variation of the previous one. For the citizen, I modified assets already owned by the company to make them fit the context and needs of the game. The game needed animation so I had to mix and modified already existing animation or create new one to fit our purpose.",
-        model: 'assets/models/city.glb',
+        model: 'assets/models/City-Assets.glb',
         title: 'City assets',
         logo: false
       },
@@ -148,8 +148,5 @@ export class ProjectComponent implements OnInit {
       },
     ];
   }
-}
-function HostListener(arg0: string, arg1: string[]) {
-  throw new Error('Function not implemented.');
 }
 

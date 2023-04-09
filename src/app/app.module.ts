@@ -20,7 +20,6 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import {ScrollingModule} from '@angular/cdk/scrolling';
-import { ScrollSpyDirective } from './services/scroll-spy.direcive';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { ScrollSpyDirective } from './services/scroll-spy.direcive';
     LinksComponent,
     FooterComponent,
     PopUpComponent,
-    ScrollSpyDirective
   ],
   imports: [
     BrowserAnimationsModule,
