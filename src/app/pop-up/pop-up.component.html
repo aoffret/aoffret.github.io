@@ -5,7 +5,7 @@
 </div>
 <div class="popUp">
     <div id="test" *ngIf="!data.logo">
-        <canvas *ngIf="!data.logo" #canvas id="canvas" style="height: 100%; width: 40vw;"></canvas>
+        <canvas *ngIf="!data.logo" #rendererCanvas id="module" style="height: 100%; width: 40vw;"></canvas>
     </div>
     <img *ngIf="data.logo" src="{{ data.model }}">
     <div class="description">

@@ -6,32 +6,32 @@ import { CanvasDisplayService } from '../services/canvas-display.service';
 @Component({
   selector: 'app-pop-up',
   templateUrl: './pop-up.component.html',
-  styleUrls: ['./pop-up.component.scss']
+  styleUrls: ['./pop-up.component.scss'],
 })
 export class PopUpComponent {
-  
   @Input()
   model!: string;
 
-  @ViewChild('canvas') 
-  private canvasRef!: ElementRef;
+  @ViewChild('rendererCanvas')
+  public rendererCanvas!: ElementRef<HTMLCanvasElement>;
 
   constructor(
     public dialogRef: MatDialogRef<PopUpComponent>,
     @Inject(MAT_DIALOG_DATA) public data: imageListItem,
-    private canvasDisplayService : CanvasDisplayService
+    private canvasDisplayService: CanvasDisplayService
   ) {}
 
   onClick(): void {
     this.dialogRef.close();
   }
 
-  ngAfterViewInit() {
-    if(!this.data.logo){
-      let canva = this.canvasRef.nativeElement
-      this.canvasDisplayService.createScene(this.data.model, canva);
-      this.canvasDisplayService.startRenderingLoop(canva);
-      this.canvasDisplayService.createControls(canva);
+  public ngAfterViewInit(): void {
+    if (!this.data.logo) {
+      this.canvasDisplayService.createScene(
+        this.rendererCanvas,
+        this.data.model
+      );
+      this.canvasDisplayService.animate();
     }
   }
 }

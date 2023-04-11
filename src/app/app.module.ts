@@ -7,8 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ProjectComponent } from './project/project.component';
@@ -17,9 +17,9 @@ import { ContactComponent } from './contact/contact.component';
 import { LinksComponent } from './links/links.component';
 import { FooterComponent } from './footer/footer.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatIconModule} from '@angular/material/icon';
-import {ScrollingModule} from '@angular/cdk/scrolling';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -45,9 +45,9 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     MatToolbarModule,
     MatDialogModule,
     MatIconModule,
-    ScrollingModule
+    ScrollingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
