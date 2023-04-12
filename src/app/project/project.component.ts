@@ -136,7 +136,7 @@ export class ProjectComponent implements OnInit {
         caption:
           'In university, I created 2 fake companies. This exercise help me visualise and put to paper ideas that came to mind. For one of the companies, we had to create only the visual for it, a brand name, a logo, a poster, and an ad. For the second one, the creation was much more thorough, I made market research, a business model, a design, and a high-fidelity prototype for mobile and website.',
         model: 'assets/graphic/Snape.png',
-        title: 'Logo Snape burger',
+        title: 'Severus Snacks',
         logo: true,
       },
       {
@@ -144,7 +144,7 @@ export class ProjectComponent implements OnInit {
         caption:
           'As a freelance Graphic designer, I add to conduct multiple projects and create logos, graphic charts, and user interfaces and I successfully completed multiple missions with a high customer satisfaction rate.',
         model: 'assets/graphic/GM.png',
-        title: 'Logo',
+        title: 'Freelance logo',
         logo: true,
       },
       {
@@ -152,7 +152,7 @@ export class ProjectComponent implements OnInit {
         caption:
           'As a freelance Graphic designer, I add to conduct multiple projects and create logos, graphic charts, and user interfaces and I successfully completed multiple missions with a high customer satisfaction rate.',
         model: 'assets/graphic/Mateo.png',
-        title: 'Logo MATEO',
+        title: 'MATEO freelance',
         logo: true,
       },
       {
@@ -160,7 +160,7 @@ export class ProjectComponent implements OnInit {
         caption:
           'In university, I created 2 fake companies. This exercise help me visualise and put to paper ideas that came to mind. For one of the companies, we had to create only the visual for it, a brand name, a logo, a poster, and an ad. For the second one, the creation was much more thorough, I made market research, a business model, a design, and a high-fidelity prototype for mobile and website.',
         model: 'assets/graphic/Book.png',
-        title: 'Logo Book',
+        title: 'Book-it',
         logo: true,
       },
     ];
