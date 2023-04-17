@@ -45,12 +45,20 @@ export class ProjectComponent implements OnInit {
         title: 'Medieval asset',
         logo: false,
       },
+      // {
+      //   src: 'assets/game/Face.png',
+      //   caption:
+      //     "This model was inspired by 'One-Armed Monstrosity' from Gravity Falls. The specificity of the model is that there is only a head and a hand. This was challenging in the modelling stage but predominantly in the rigging and animation steps. Because the only features of the model are his face and his hand, greater care was put into the facial animation to convey all the feedback necessary.",
+      //   model: 'assets/models/One-Armed-Monstrosity.glb',
+      //   title: 'Cartoon head',
+      //   logo: false,
+      // },
       {
-        src: 'assets/game/Face.png',
+        src: 'assets/game/Pixel.png',
         caption:
-          "This model was inspired by 'One-Armed Monstrosity' from Gravity Falls. The specificity of the model is that there is only a head and a hand. This was challenging in the modelling stage but predominantly in the rigging and animation steps. Because the only features of the model are his face and his hand, greater care was put into the facial animation to convey all the feedback necessary.",
-        model: 'assets/models/One-Armed-Monstrosity.glb',
-        title: 'Cartoon head',
+          'During my last year of University, I made an FPS 3D Rogue in space with a procedurally generated spaceship. Each room was modelled and textured with 3ds Max and Photoshop. They were then implemented in Unity to make the room generation system. I then modelled, textured and animated the enemy and weapon. The chosen aesthetic was pixel art for the texturing. This aesthetic allowed me a quick texturing and gave me a good introduction to texturing and UVs',
+        model: 'assets/models/Pixel-Game-Assets.glb',
+        title: 'Pixel Game',
         logo: false,
       },
       {
@@ -59,14 +67,6 @@ export class ProjectComponent implements OnInit {
           'I created 3D assets to fit a medieval hyper-casual mobile game. The assets needed to be in 3 different time periods. The chosen time periods were Pre-historical, Romain and Middle ages. Each period had to have 7 types of building(Farm, Archer tower, Stable, House, Mage tower, Harbor and Catapult site), 2 types of vehicle( Catapult and Boats), and 4 types of unit (Farmer, Soldier, Archer and Mage). There were also 3 units and buildings that were in-temporal. The unit character was created and then fitted with a proper rig, and then all the weapons, clothes, and equipment were added to the rig. All the animations were compiled on the same model to reduce the weight of the file and simplify the work on the programming side.',
         model: 'assets/models/Medieval-Asset-3.glb',
         title: 'Medieval asset',
-        logo: false,
-      },
-      {
-        src: 'assets/game/Pixel.png',
-        caption:
-          'During my last year of University, I made an FPS 3D Rogue in space with a procedurally generated spaceship. Each room was modelled and textured with 3ds Max and Photoshop. They were then implemented in Unity to make the room generation system. I then modelled, textured and animated the enemy and weapon. The chosen aesthetic was pixel art for the texturing. This aesthetic allowed me a quick texturing and gave me a good introduction to texturing and UVs',
-        model: 'assets/models/Pixel-Game-Assets.glb',
-        title: 'Pixel Game',
         logo: false,
       },
     ];
