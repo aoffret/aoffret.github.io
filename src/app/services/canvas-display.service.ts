@@ -16,10 +16,6 @@ export class CanvasDisplayService {
   private controls!: OrbitControls;
 
   private light!: THREE.AmbientLight;
-  private light1!: THREE.PointLight;
-  private light2!: THREE.PointLight;
-  private light3!: THREE.PointLight;
-  private light4!: THREE.PointLight;
   private directionalLight!: THREE.DirectionalLight;
 
   private frameId!: number;
@@ -37,6 +33,8 @@ export class CanvasDisplayService {
       alpha: true, // transparent background
       antialias: true, // smooth edges
     });
+    this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    this.renderer.toneMappingExposure = 1.0; 
     this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
 
     // create the scene
@@ -61,25 +59,19 @@ export class CanvasDisplayService {
   }
 
   private createLights() {
-    this.light = new THREE.AmbientLight(0x404040, 1);
-    this.light.position.z = 10;
+    this.light = new THREE.AmbientLight(0xffffff, 0.6);
     this.scene.add(this.light);
-    this.directionalLight = new THREE.DirectionalLight(0x404040);
-    this.directionalLight.position.set(0, 1, 0);
+
+    // Hemisphere light for more natural ambient effect
+    const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.6);
+    hemiLight.position.set(0, 100, 0);
+    this.scene.add(hemiLight);
+
+    // Directional sunlight
+    this.directionalLight = new THREE.DirectionalLight(0xfff8e7, 0.6);
+    this.directionalLight.position.set(5, 10, 7.5);
     this.directionalLight.castShadow = true;
     this.scene.add(this.directionalLight);
-    this.light1 = new THREE.PointLight(0x404040);
-    this.light1.position.set(0, 200, 400);
-    this.scene.add(this.light1);
-    this.light2 = new THREE.PointLight(0x404040);
-    this.light2.position.set(500, 100, 0);
-    this.scene.add(this.light2);
-    this.light3 = new THREE.PointLight(0x404040);
-    this.light3.position.set(0, 100, -500);
-    this.scene.add(this.light3);
-    this.light4 = new THREE.PointLight(0x404040);
-    this.light4.position.set(-500, 300, 500);
-    this.scene.add(this.light4);
   }
 
   private loadModel(modelDisplay: any) {
@@ -105,7 +97,10 @@ export class CanvasDisplayService {
 
     this.controls = new OrbitControls(this.camera, renderer.domElement);
     this.controls.autoRotate = true;
+    this.controls.autoRotateSpeed = 1.0; // slower than default
     this.controls.enableZoom = true;
+    this.controls.zoomSpeed = 0.5;       // slower zoom
+    this.controls.rotateSpeed = 0.4;     // slower rotation
     this.controls.enablePan = false;
     this.controls.update();
   };
